@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Thư viện liên kết báo chí, video, podcast và bài viết liên quan Nguyễn Thái Bình / Học viện Concepts (VCS).">
+<title>Nguyễn Thái Bình · Media Link Tree | Học viện Concepts</title>
+<link rel="canonical" href="https://nguyen-thai-binh-media.pages.dev/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Nguyễn Thái Bình (Steven) · Học viện Concepts (VCS)">
+<meta name="keywords" content="Nguyễn Thái Bình, chuyên gia F&B, Học viện Concepts, VCS, Mapdy, vận hành F&B, nhượng quyền, báo chí F&B Việt Nam">
+<meta name="theme-color" content="#2b0956">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Học viện Concepts (VCS)">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Nguyễn Thái Bình · Media Link Tree | Học viện Concepts">
+<meta property="og:description" content="Thư viện liên kết báo chí, video, podcast và bài viết liên quan Nguyễn Thái Bình / Học viện Concepts (VCS).">
+<meta property="og:url" content="https://nguyen-thai-binh-media.pages.dev/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nguyễn Thái Bình · Media Link Tree | Học viện Concepts">
+<meta name="twitter:description" content="Thư viện liên kết báo chí, video, podcast và bài viết liên quan Nguyễn Thái Bình / Học viện Concepts (VCS).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b0956'/%3E%3Ctext x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-size='34' font-weight='bold' fill='%23ffc700' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Nguyễn Thái Bình","alternateName":"Steven Nguyen","jobTitle":"Chuyên gia vận hành & quản trị chuỗi F&B","worksFor":{"@type":"Organization","name":"Học viện Concepts (VCS)","url":"https://vcs.edu.vn"},"url":"https://nguyen-thai-binh-media.pages.dev/"}}
+</script>
+<style>
+:root{
+  --purple:#2b0956; --purple2:#40107a; --purple3:#6c35a5;
+  --yellow:#ffc700; --ink:#20172a; --muted:#756c7c;
+  --bg:#f6f3f9; --card:#fff; --line:#e9e1f0; --soft:#f1ebf7;
+  --shadow:0 16px 38px rgba(43,9,86,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:
+radial-gradient(circle at 10% -10%,rgba(255,199,0,.16),transparent 26%),
+linear-gradient(180deg,#f8f5fb 0,#f4f0f7 100%);color:var(--ink)}
+a{color:inherit}
+.hero{background:linear-gradient(135deg,var(--purple) 0%,#45117a 58%,#5a1c8e 100%);color:white;padding:42px 22px 92px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-70px;bottom:-150px;width:360px;height:360px;border-radius:50%;border:55px solid rgba(255,199,0,.11)}
+.wrap{max-width:1120px;margin:auto}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.02em}
+.logo{width:42px;height:42px;border-radius:12px;background:var(--yellow);color:var(--purple);display:grid;place-items:center;font-weight:950;box-shadow:0 8px 20px rgba(0,0,0,.16)}
+.hero h1{font-size:clamp(30px,5vw,54px);line-height:1.02;margin:34px 0 12px;max-width:780px;letter-spacing:-.035em}
+.hero p{max-width:760px;color:#eadff4;font-size:16px;line-height:1.7;margin:0}
+.hero-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.hero-chip{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:999px;padding:7px 11px;font-size:12px}
+.panel{max-width:1120px;margin:-55px auto 0;position:relative;z-index:3;padding:0 18px 60px}
+.controls{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:16px}
+.search-row{display:grid;grid-template-columns:1fr auto;gap:10px}
+.search{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:0 14px;background:#fff}
+.search input{width:100%;border:0;outline:none;padding:14px 0;font-size:15px;background:transparent;color:var(--ink)}
+.clear{border:0;background:var(--soft);color:var(--purple);border-radius:11px;padding:10px 13px;font-weight:800;cursor:pointer}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.filter{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:750;color:#63576c;cursor:pointer}
+.filter.active{background:var(--purple);border-color:var(--purple);color:#fff}
+.stats{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:22px 4px 12px;color:var(--muted);font-size:13px}
+.stats b{color:var(--purple)}
+.section{margin-top:30px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 4px 12px}
+.section-head h2{margin:0;color:var(--purple);font-size:22px;letter-spacing:-.02em}
+.section-count{font-size:12px;color:var(--muted)}
+.year-block{margin:18px 0 28px}
+.year-title{display:flex;align-items:center;gap:9px;margin:0 4px 10px;color:#6c6074;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.year-title:after{content:"";height:1px;background:var(--line);flex:1}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;transition:.16s ease;box-shadow:0 2px 7px rgba(43,9,86,.025)}
+.card:hover{transform:translateY(-2px);border-color:#ccb9dd;box-shadow:0 10px 26px rgba(43,9,86,.09)}
+.source-icon{width:42px;height:42px;border-radius:12px;background:var(--soft);display:grid;place-items:center;color:var(--purple);font-weight:950;font-size:14px}
+.title{font-size:14px;font-weight:800;line-height:1.42;margin:0 0 7px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;color:var(--muted);font-size:11px}
+.badge{background:#fff6cc;color:#755b00;border:1px solid #ffe37a;padding:3px 7px;border-radius:999px;font-weight:800}
+.source{font-weight:700}
+.open{width:38px;height:38px;border-radius:11px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;text-decoration:none;color:var(--purple);font-size:18px;font-weight:900}
+.open:hover{background:var(--yellow);border-color:var(--yellow)}
+.empty{display:none;text-align:center;padding:50px 15px;color:var(--muted)}
+.footer{text-align:center;padding:20px 18px 38px;color:#82758a;font-size:12px}
+.footer strong{color:var(--purple)}
+
+.import-box{
+  display:grid;grid-template-columns:1fr auto;gap:12px 18px;align-items:center;
+  padding:14px 15px;margin-bottom:14px;border:1px solid #eadff3;border-radius:16px;
+  background:linear-gradient(135deg,#fbf8fe 0%,#fffdf4 100%);
+}
+.import-title{font-size:12px;font-weight:950;letter-spacing:.06em;color:var(--purple);margin-bottom:4px}
+.import-sub{font-size:12px;color:var(--muted);line-height:1.5}
+.import-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.import-btn{border:1px solid var(--line);background:#fff;color:var(--purple);border-radius:11px;padding:10px 12px;font-weight:850;cursor:pointer}
+.import-btn.primary{background:var(--yellow);border-color:var(--yellow);color:var(--purple)}
+.import-btn:hover{transform:translateY(-1px)}
+.import-status{grid-column:1/-1;font-size:11px;color:#756b7c;border-top:1px dashed #e3d8ec;padding-top:10px}
+.import-status.ok{color:#24613a}.import-status.err{color:#9c2330}
+
+@media(max-width:760px){
+  .hero{padding-top:28px;padding-bottom:82px}
+  .panel{padding-left:12px;padding-right:12px}
+  .grid{grid-template-columns:1fr}
+  .search-row{grid-template-columns:1fr}
+  .clear{display:none}
+  .card{grid-template-columns:38px 1fr auto;padding:13px}
+  .source-icon{width:38px;height:38px}
+  .hero h1{font-size:36px}
+  .import-box{grid-template-columns:1fr}
+  .import-actions{justify-content:flex-start}
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap">
+   <div class="brand"><div class="logo">VCS</div><div>HỌC VIỆN CONCEPTS</div></div>
+   <h1>Nguyễn Thái Bình<br>Media & Insights Library</h1>
+   
+   
+ </div>
+</header>
+
+<main class="panel">
+ <div class="controls">
+   <div class="import-box">
+     <div class="import-copy">
+       <div class="import-title">CẬP NHẬT TỪ FILE WORD (.DOCX)</div>
+       <div class="import-sub">Chọn file Word mới. Hệ thống sẽ đọc hyperlink ẩn + URL dạng chữ, cập nhật Link Tree ngay trên trình duyệt.</div>
+     </div>
+     <div class="import-actions">
+       <input id="docxInput" type="file" accept=".docx" hidden>
+       <button class="import-btn primary" id="importBtn">Import Word</button>
+       <button class="import-btn" id="downloadBtn">Xuất HTML mới</button>
+     </div>
+     <div class="import-status" id="importStatus">Chưa import file mới.</div>
+   </div>
+   <div class="search-row">
+     <label class="search" aria-label="Tìm kiếm liên kết">
+       <span>⌕</span>
+       <input id="q" placeholder="Tìm theo tiêu đề, nguồn báo, năm, từ khóa…" autocomplete="off">
+     </label>
+     <button class="clear" id="clearBtn">Xóa tìm kiếm</button>
+   </div>
+   <div class="filters" id="typeFilters"></div>
+   <div class="filters" id="yearFilters"></div>
+ </div>
+ <div class="stats">
+   <div>Đang hiển thị <b id="shown">0</b> / <b id="total">0</b> liên kết</div>
+   <div id="activeLabel">Tất cả nội dung</div>
+ </div>
+ <div id="content"></div>
+ <div class="empty" id="empty">Không tìm thấy liên kết phù hợp với bộ lọc hiện tại.</div>
+</main>
+
+<footer class="footer">
+  <strong>Học viện Concepts (VCS)</strong> · Link Tree được dựng từ tài liệu liên kết gốc, không thay đổi URL đích.
+</footer>
+
+<script>
+let DATA = [{"section": "Hồ sơ & tổng hợp", "year": "Khác", "title": "Báo Mới · Học viện Concepts.epi", "url": "https://baomoi.com/tag/H%E1%BB%8Dc-vi%E1%BB%87n-Concepts.epi", "source": "Báo Mới", "badges": []}, {"section": "Hồ sơ & tổng hợp", "year": "Khác", "title": "Nguyễn Thái Bình: Tin tức, Video, hình ảnh Nguyễn Thái Bình | CafeBiz", "url": "https://cafebiz.vn/nguyen-thai-binh.html", "source": "CafeBiz", "badges": []}, {"section": "Hồ sơ & tổng hợp", "year": "Khác", "title": "'Công nghệ có thể copy, nhưng chất xám phân tích thì không' - CoFounder Mapdy.vn kể chuyện làm nền tảng Location Intelligence đầu tiên của người Việt", "url": "https://vietnambiz.vn/cong-nghe-co-the-copy-nhung-chat-xam-phan-tich-thi-khong-cofounder-mapdyvn-ke-chuyen-lam-nen-tang-location-intelligence-dau-tien-cua-nguoi-viet-20268281616274.htm", "source": "VietnamBiz", "badges": ["Video/quote", "Mapdy"]}, {"section": "Video", "year": "2024", "title": "Mở nội dung trên Facebook", "url": "https://www.facebook.com/watch/?v=2145061859201701&rdid=mBM9Ft1LXt9FFyvW", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Facebook · 15ypRvy3Xr", "url": "https://www.facebook.com/share/v/15ypRvy3Xr/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "VTV · gan 50 doanh nghiep thuc pham do uong du kien tang gia", "url": "https://vtv.vn/kinh-te/gan-50-doanh-nghiep-thuc-pham-do-uong-du-kien-tang-gia-20250320104520073.htm", "source": "VTV", "badges": []}, {"section": "Video", "year": "2025", "title": "Mở nội dung trên YouTube", "url": "https://www.youtube.com/watch?v=3lfU-9WQJZg", "source": "YouTube", "badges": []}, {"section": "Video", "year": "2025", "title": "Đóng BHXH bắt buộc từ ngày 1-7", "url": "https://www.facebook.com/watch/?v=715124191312792&rdid=KFDF6EpnvqXu3dWH", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Mở nội dung trên Facebook", "url": "https://www.facebook.com/tintucvtv9/videos/781260351196599", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Instagram · DOn 2r6gcBi", "url": "https://www.instagram.com/reel/DOn-2r6gcBi/?igsh=cnVma253YzA0d3Qy", "source": "Instagram", "badges": []}, {"section": "Video", "year": "2025", "title": "Mở nội dung trên Facebook", "url": "https://www.facebook.com/reel/1557310635289232/?__tn__=R*F", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Facebook · 18uNXueFW6", "url": "https://www.facebook.com/share/v/18uNXueFW6/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "TikTok · ZSUt87WmB", "url": "https://vt.tiktok.com/ZSUt87WmB/", "source": "TikTok", "badges": []}, {"section": "Video", "year": "2025", "title": "Mở nội dung trên Facebook", "url": "https://www.facebook.com/reel/729626140137271/?__tn__=R*F", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Facebook · 17bxorgRsb", "url": "https://www.facebook.com/share/v/17bxorgRsb/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Facebook · 1EuDAYzzK1", "url": "https://www.facebook.com/share/v/1EuDAYzzK1/?mibextid=wwXIfr", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Facebook · 1KACkRna32", "url": "https://www.facebook.com/share/v/1KACkRna32/?mibextid=wwXIfr", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2025", "title": "Tái định hình thị trường F&B", "url": "https://vtv.vn/tai-dinh-hinh-thi-truong-fb-100250811120527818.htm", "source": "VTV", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 1JjWi6HRTV", "url": "https://www.facebook.com/share/v/1JjWi6HRTV/?mibextid=wwXIfr", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 1EtwCoRyEi", "url": "https://www.facebook.com/share/v/1EtwCoRyEi/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "(1)Sự thật đằng sau mô hình trà sữa 7k? #taichinh #kinhte #fyp | Lẩu Cá Kèo | TikTok", "url": "https://www.tiktok.com/@gocnhinkinhteofficial/video/7612985557332937985", "source": "TikTok", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 1BVQrRx3Xo", "url": "https://www.facebook.com/share/v/1BVQrRx3Xo/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Thấy gì từ việc chuỗi trà sữa Mixue đóng hàng trăm cửa hàng? | Làm ăn 365", "url": "https://www.youtube.com/watch?v=Px42I1H3688&t=34s", "source": "YouTube", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 1CV5iLUnyk", "url": "https://www.facebook.com/share/v/1CV5iLUnyk", "source": "Facebook", "badges": ["Mapdy"]}, {"section": "Video", "year": "2026", "title": "Facebook · 19czQ41C9j", "url": "https://www.facebook.com/share/v/19czQ41C9j", "source": "Facebook", "badges": ["Tổng hợp"]}, {"section": "Video", "year": "2026", "title": "Facebook · 1CVWwKtdm2", "url": "https://www.facebook.com/share/v/1CVWwKtdm2/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 17gBdi9jMy", "url": "https://www.facebook.com/share/v/17gBdi9jMy/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 1GoFZAxQKL", "url": "https://www.facebook.com/share/v/1GoFZAxQKL/", "source": "Facebook", "badges": ["Mapdy"]}, {"section": "Video", "year": "2026", "title": "Facebook · 1H7cMVdo1s", "url": "https://www.facebook.com/share/v/1H7cMVdo1s", "source": "Facebook", "badges": ["Mapdy"]}, {"section": "Video", "year": "2026", "title": "Facebook · 1E4J3Ezr5x", "url": "https://www.facebook.com/share/v/1E4J3Ezr5x/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 188HcjvLhq", "url": "https://www.facebook.com/share/v/188HcjvLhq/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 1DSYTsJPT3", "url": "https://www.facebook.com/share/v/1DSYTsJPT3/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Facebook · 1EvpuRnWxy", "url": "https://www.facebook.com/share/v/1EvpuRnWxy/", "source": "Facebook", "badges": []}, {"section": "Video", "year": "2026", "title": "Mở nội dung trên Facebook", "url": "https://www.facebook.com/reel/1368499072035396", "source": "Facebook", "badges": []}, {"section": "Podcast", "year": "2024", "title": "VnExpress · no ro dich vu huong den kinh te doc than 4817580", "url": "https://vnexpress.net/no-ro-dich-vu-huong-den-kinh-te-doc-than-4817580.html", "source": "VnExpress", "badges": []}, {"section": "Podcast", "year": "2025", "title": "The Restaurant Podcast 2025 || Xây dựng F&B bền vững – Góc nhìn từ chuyên gia Nguyễn Thái Bình", "url": "https://www.youtube.com/watch?v=VjtuCKFVT_o&t=2518s", "source": "YouTube", "badges": []}, {"section": "Podcast", "year": "2026", "title": "Mở nội dung trên Facebook", "url": "https://www.facebook.com/HLBVietnam/videos/4421855684721432/?__cft__%5b0%5d=AZaietPdFgVAyA2akzx_it5f9-Xob16YhApC_9u59_zpUJ_aLNgR4l_cgJR9TL5BXlvvJ0LMb1ptzILL9Kp3iXPPrw7cLuY_LVVOzWVHj49yi7YezYlBh34CwjTutFH1Flc-KAR8HYs8BfdNTw9w4-gNFjX569PGZTSc89skloaGr6MUYz5wnWywWJIfpRce3KE&__tn__=R-R", "source": "Facebook", "badges": []}, {"section": "Podcast", "year": "2026", "title": "Facebook · 18oyP26MrP", "url": "https://www.facebook.com/share/v/18oyP26MrP/", "source": "Facebook", "badges": []}, {"section": "Bài viết", "year": "2023", "title": "Mekong ASEAN · bat chap covid 19 doanh thu nganh fb nam 2022 van tang truong manh post17022", "url": "https://mekongasean.vn/bat-chap-covid-19-doanh-thu-nganh-fb-nam-2022-van-tang-truong-manh-post17022.html", "source": "Mekong ASEAN", "badges": []}, {"section": "Bài viết", "year": "2023", "title": "Znews · chuoi cua hang an uong that the tai viet nam post1396373", "url": "https://znews.vn/chuoi-cua-hang-an-uong-that-the-tai-viet-nam-post1396373.html?mibextid=l066kq", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2023", "title": "Znews · ly ca phe gia 100000 dong khong con xa la post1408033", "url": "https://znews.vn/ly-ca-phe-gia-100000-dong-khong-con-xa-la-post1408033.html", "source": "Znews", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2023", "title": "Mekong ASEAN · katinat saigon kafe thuong hieu sinh sau de muon dan than tai thi truong ha noi post19627", "url": "https://mekongasean.vn/katinat-saigon-kafe-thuong-hieu-sinh-sau-de-muon-dan-than-tai-thi-truong-ha-noi-post19627.html", "source": "Mekong ASEAN", "badges": ["Long form", "Video/quote"]}, {"section": "Bài viết", "year": "2024", "title": "Nhịp Cầu Đầu Tư · trao luu fb sao cho ben 3356990", "url": "https://nhipcaudautu.vn/kinh-doanh/trao-luu-fb-sao-cho-ben-3356990/", "source": "Nhịp Cầu Đầu Tư", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Tiền Phong · ly do nhieu nguoi bo cong bo viec de xep hang du trend post1619600", "url": "https://tienphong.vn/ly-do-nhieu-nguoi-bo-cong-bo-viec-de-xep-hang-du-trend-post1619600.tpo", "source": "Tiền Phong", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2024", "title": "VnExpress · nhieu nguoi viet thich an ngoai di ca phe moi tuan 4727242", "url": "https://vnexpress.net/nhieu-nguoi-viet-thich-an-ngoai-di-ca-phe-moi-tuan-4727242.html", "source": "VnExpress", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "iPOS.vn · bao cao nganh fnb 2023", "url": "https://ipos.vn/bao-cao-nganh-fnb-2023/", "source": "iPOS.vn", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Báo Công Thương · gia tri thi truong nganh thuc pham va do uong viet nam nam 2024 du kien tang 1092 311339.html&m", "url": "https://congthuong.vn/gia-tri-thi-truong-nganh-thuc-pham-va-do-uong-viet-nam-nam-2024-du-kien-tang-1092-311339.html&mobile=yes&amp=1", "source": "Báo Công Thương", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Báo Mới · nguoi viet chi gan 540 000 ty an ngoai va trien vong nganh f b nam 2024 c48731318.epi", "url": "https://baomoi.com/nguoi-viet-chi-gan-540-000-ty-an-ngoai-va-trien-vong-nganh-f-b-nam-2024-c48731318.epi", "source": "Báo Mới", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Znews · mo nha hang quan ca phe o ha noi lai hon o tphcm post1468336", "url": "https://znews.vn/mo-nha-hang-quan-ca-phe-o-ha-noi-lai-hon-o-tphcm-post1468336.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Tiền Phong · ly do nhieu nguoi viet nhin an sang thich du trend duong pho post1626838", "url": "https://tienphong.vn/ly-do-nhieu-nguoi-viet-nhin-an-sang-thich-du-trend-duong-pho-post1626838.tpo", "source": "Tiền Phong", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "vietnamnet.vn · nguoi viet me trend an uong chi 70 000 dong moi lan di cafe du kinh te kho khan 2268006", "url": "https://vietnamnet.vn/nguoi-viet-me-trend-an-uong-chi-70-000-dong-moi-lan-di-cafe-du-kinh-te-kho-khan-2268006.html", "source": "vietnamnet.vn", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "CafeBiz · tung la chuoi do uong tien phong trong mo hinh tra sua may lanh vi sao tuoi tho cua nguoi sai g", "url": "https://cafebiz.vn/tung-la-chuoi-do-uong-tien-phong-trong-mo-hinh-tra-sua-may-lanh-vi-sao-tuoi-tho-cua-nguoi-sai-gon-phai-roi-thi-truong-sau-gan-20-nam-176240510180813771.chn", "source": "CafeBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2024", "title": "CafeBiz · chiec can suc va con sot dam vi hanh trinh phuc long va phe la keo dai con nghien tra sua tao r", "url": "https://cafebiz.vn/chiec-can-suc-va-con-sot-dam-vi-hanh-trinh-phuc-long-va-phe-la-keo-dai-con-nghien-tra-sua-tao-ra-song-ngam-tra-dac-san-viet-nam-176240810184637957.chn", "source": "CafeBiz", "badges": ["Long form", "Video/quote"]}, {"section": "Bài viết", "year": "2024", "title": "CafeBiz · vi tri dep do uong ngon tai sao starbucks van dong cua hang mang tinh bieu tuong o tphcm giua l", "url": "https://cafebiz.vn/vi-tri-dep-do-uong-ngon-tai-sao-starbucks-van-dong-cua-hang-mang-tinh-bieu-tuong-o-tphcm-giua-luc-dong-khach-176240819114332785.chn", "source": "CafeBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2024", "title": "Người Lao Động · bi kip mua nguyen lieu cho chu quan", "url": "https://nld.com.vn/bi-kip-mua-nguyen-lieu-cho-chu-quan-196240901201038357.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "CafeF · tu dingtea tocotoco den phuc long phe la thap ky cua tra sua da bien doi the nao", "url": "https://cafef.vn/tu-dingtea-tocotoco-den-phuc-long-phe-la-thap-ky-cua-tra-sua-da-bien-doi-the-nao-188240909112652503.chn", "source": "CafeF", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Người Quan Sát · nguyen nhan nao khien the coffee house va starbucks lan luot rut lui 155424", "url": "https://nguoiquansat.vn/nguyen-nhan-nao-khien-the-coffee-house-va-starbucks-lan-luot-rut-lui-155424.html", "source": "Người Quan Sát", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Người Lao Động · do an nhanh den thoi chat vat", "url": "https://nld.com.vn/do-an-nhanh-den-thoi-chat-vat-196240917205542412.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Nhịp Cầu Đầu Tư · fb no hoa be tac 3359999", "url": "https://nhipcaudautu.vn/kinh-doanh/fb-no-hoa-be-tac-3359999/", "source": "Nhịp Cầu Đầu Tư", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Diễn đàn Doanh nghiệp · chuoi f b trung quoc do bo dong nam a", "url": "https://diendandoanhnghiep.vn/chuoi-f-b-trung-quoc-do-bo-dong-nam-a-10142110.html", "source": "Diễn đàn Doanh nghiệp", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "Phụ Nữ Online · gioi tre va xu huong mot minh nhung ke don doc vui ve a1531924", "url": "https://www.phunuonline.com.vn/gioi-tre-va-xu-huong-mot-minh-nhung-ke-don-doc-vui-ve-a1531924.html", "source": "Phụ Nữ Online", "badges": []}, {"section": "Bài viết", "year": "2024", "title": "CafeBiz · khong ngu o sai gon tu bai tap cua mot sinh vien dai hoc hoa sen den lan song ngoi xuyen dem o", "url": "https://cafebiz.vn/khong-ngu-o-sai-gon-tu-bai-tap-cua-mot-sinh-vien-dai-hoc-hoa-sen-den-lan-song-ngoi-xuyen-dem-o-quan-ca-phe-cua-gen-z-176241210102150466.chn", "source": "CafeBiz", "badges": ["Long form", "Video/quote"]}, {"section": "Bài viết", "year": "2024", "title": "CafeBiz · dang sau 3 nam tang truong nong cua katinat tu diem bung no nho chiec ly cau vong den bai toan", "url": "https://cafebiz.vn/dang-sau-3-nam-tang-truong-nong-cua-katinat-tu-diem-bung-no-nho-chiec-ly-cau-vong-den-bai-toan-tuong-lai-cho-80-cua-hang-do-so-176241223110156556.chn", "source": "CafeBiz", "badges": ["Long form", "Video/quote"]}, {"section": "Bài viết", "year": "2025", "title": "The Saigon Times · kinh doanh fb dang chuyen trang thai ngay mot nhanh", "url": "https://thesaigontimes.vn/kinh-doanh-fb-dang-chuyen-trang-thai-ngay-mot-nhanh/", "source": "The Saigon Times", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · vi sao golden gate huy ke hoach chia co tuc lien tiep dong nhieu cua hang manwah yu tang truoc", "url": "https://cafebiz.vn/vi-sao-golden-gate-huy-ke-hoach-chia-co-tuc-lien-tiep-dong-nhieu-cua-hang-manwah-yu-tang-truoc-them-cuoi-nam-176250108085616147.chn?fbclid=IwZXh0bgNhZW0CMTAAAR1fyfkH9kP4kdZfZriOu8BzA-GVqhMp7P7eO6Uv8rfDRV77hVLxScALNq0_aem_Q45zZ3rwwlfyQwAy1yL-wA", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · bac co long wang nam co chang kang kung giai ma mo hinh hap thuy nhiet giup moi cua hang co the", "url": "https://cafebiz.vn/bac-co-long-wang-nam-co-chang-kang-kung-giai-ma-mo-hinh-hap-thuy-nhiet-giup-moi-cua-hang-co-the-dat-doanh-thu-toi-3-ty-dong-thang-thuc-day-golden-gate-gia-nhap-cuoc-choi-176250126115512948.chn", "source": "CafeBiz", "badges": ["Long form", "Video/quote"]}, {"section": "Bài viết", "year": "2025", "title": "The Saigon Times · buoc sang nam moi 2025 voi nhieu ky vong", "url": "https://sgtt.thesaigontimes.vn/buoc-sang-nam-moi-2025-voi-nhieu-ky-vong/", "source": "The Saigon Times", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "FNBStudy · ke hoach tai chinh du bao doanh thu cho mo hinh nha hang dich vu day du", "url": "https://fnbstudy.vn/product/ke-hoach-tai-chinh-du-bao-doanh-thu-cho-mo-hinh-nha-hang-dich-vu-day-du/", "source": "FNBStudy", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VietnamBiz · am anh cua golden gate voi nganh do uong", "url": "https://vietnambiz.vn/am-anh-cua-golden-gate-voi-nganh-do-uong-2025219161347793.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "The Saigon Times · loat mat bang bo trong sau tet chu cua hang van lo suc mua kem", "url": "https://thesaigontimes.vn/loat-mat-bang-bo-trong-sau-tet-chu-cua-hang-van-lo-suc-mua-kem/", "source": "The Saigon Times", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VietnamBiz · tung co hon 1000 ki ot ben trong winmart mo hinh nay cua phuc long dang hoat dong ra sao", "url": "https://vietnambiz.vn/tung-co-hon-1000-ki-ot-ben-trong-winmart-mo-hinh-nay-cua-phuc-long-dang-hoat-dong-ra-sao-2025228222249298.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VietnamBiz · chagee chinh thuc vao viet nam phe la koi the nen lo lang", "url": "https://vietnambiz.vn/chagee-chinh-thuc-vao-viet-nam-phe-la-koi-the-nen-lo-lang-20253415361943.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Mekong ASEAN · chi co khoang 15 doanh nghiep fb tang truong trong nam 2024 39407", "url": "https://mekongasean.vn/chi-co-khoang-15-doanh-nghiep-fb-tang-truong-trong-nam-2024-39407.html", "source": "Mekong ASEAN", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Znews · nhieu nha hang ca phe muon tang gia ban post1538973", "url": "https://znews.vn/nhieu-nha-hang-ca-phe-muon-tang-gia-ban-post1538973.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · kinh doanh an uong thu hon 688000 ty dong nganh fb sap vao song tang gia", "url": "https://cafebiz.vn/kinh-doanh-an-uong-thu-hon-688000-ty-dong-nganh-fb-sap-vao-song-tang-gia-176250318191117718.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "PLO · nhieu nha hang quan an quan ca phe muon tang gia ban post839544", "url": "https://plo.vn/nhieu-nha-hang-quan-an-quan-ca-phe-muon-tang-gia-ban-post839544.amp", "source": "PLO", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Báo Đầu Tư · thi truong fb 2025 chuoi ma va nhuong quyen dan dat da tang truong d255918", "url": "https://amp.baodautu.vn/thi-truong-fb-2025-chuoi-ma-va-nhuong-quyen-dan-dat-da-tang-truong-d255918.html", "source": "Báo Đầu Tư", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Báo Đầu Tư · thi truong fb 2025 chuoi ma va nhuong quyen dan dat da tang truong d255918", "url": "https://baodautu.vn/thi-truong-fb-2025-chuoi-ma-va-nhuong-quyen-dan-dat-da-tang-truong-d255918.html", "source": "Báo Đầu Tư", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Doanh Nhân & Pháp Luật · thi truong fb 2025 co hoi vang cho tan binh nhung lieu co de dang 81457", "url": "https://doanhnhan.baophapluat.vn/thi-truong-fb-2025-co-hoi-vang-cho-tan-binh-nhung-lieu-co-de-dang-81457.html", "source": "Doanh Nhân & Pháp Luật", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "TheLEADER · bao chi phi cuon phang loi nhuan nganh fb d39402", "url": "https://theleader.vn/bao-chi-phi-cuon-phang-loi-nhuan-nganh-fb-d39402.html", "source": "TheLEADER", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Xanh SM rục rịch tiến vào mảng giao đồ ăn: Cơ hội dành cho tân binh của ông Phạm Nhật Vượng thế nào?", "url": "https://vietnambiz.vn/xanh-sm-ruc-rich-tien-vao-mang-giao-do-an-co-hoi-danh-cho-tan-binh-cua-ong-pham-nhat-vuong-the-nao-202542816142730.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Chiến lược giao đồ ăn của Xanh SM: Mức chiết khấu thấp có đủ lôi kéo nhà hàng từ ShopeeFood, GrabFood?", "url": "https://vietnambiz.vn/chien-luoc-giao-do-an-cua-xanh-sm-muc-chiet-khau-thap-co-du-loi-keo-nha-hang-tu-shopeefood-grabfood-202551216248461.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Sau lùm xùm 'đường lưỡi bò' phi pháp, Chagee còn cơ hội ở thị trường Việt Nam?", "url": "https://cafebiz.vn/sau-lum-xum-duong-luoi-bo-phi-phap-chagee-con-co-hoi-o-thi-truong-viet-nam-176250323142344449.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Doanh nghiệp F&B và bài toán tránh tăng giá gây sốc cho khách hàng", "url": "https://baodautu.vn/doanh-nghiep-fb-va-bai-toan-tranh-tang-gia-gay-soc-cho-khach-hang-d258751.html", "source": "Báo Đầu Tư", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Ổ bánh mì, tô phở rục rịch tăng giá 2.000 – 5.000 đồng", "url": "https://nld.com.vn/o-banh-mi-to-pho-ruc-rich-tang-gia-2000-5000-dong-196250611114016593.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Hộ kinh doanh mong được hỗ trợ để làm đúng", "url": "https://nld.com.vn/ho-kinh-doanh-mong-duoc-ho-tro-de-lam-dung-196250611205503033.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Từ sổ tay đến hóa đơn điện tử: Khi chuyển đổi số không còn là sân chơi riêng của ‘ông lớn'", "url": "https://vietnambiz.vn/tu-so-tay-den-hoa-don-dien-tu-khi-chuyen-doi-so-khong-con-la-san-choi-rieng-cua-ong-lon-2025617131557579.htm", "source": "VietnamBiz", "badges": ["Long form"]}, {"section": "Bài viết", "year": "2025", "title": "Quán nước, tiệm tạp hóa đóng bảo hiểm xã hội: Mừng hay lo?", "url": "https://vtv.vn/quan-nuoc-tiem-tap-hoa-dong-bao-hiem-xa-hoi-mung-hay-lo-100250628155953038.htm", "source": "VTV", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Tiểu thương loay hoay giữa áp lực bỏ thuế khoán và bài toán tăng giá", "url": "https://vnbusiness.vn/viet-nam/tieu-thuong-loay-hoay-giua-ap-luc-bo-thue-khoan-va-bai-toan-tang-gia-1107378.html", "source": "VnBusiness", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Phê La \"gạch tên\" loạt đồ uống biểu tượng, chuyên gia F&B: Tinh gọn menu để tăng tốc độ ra món, giảm lỗi pha chế", "url": "https://cafebiz.vn/phe-la-gach-ten-loat-do-uong-bieu-tuong-chuyen-gia-fb-tinh-gon-menu-de-tang-toc-do-ra-mon-giam-loi-pha-che-176250711074049678.chn", "source": "CafeBiz", "badges": ["Long form"]}, {"section": "Bài viết", "year": "2025", "title": "Café Amazon 'vỡ mộng' tại Việt Nam, lạc nhịp từ sản phẩm tới trải nghiệm?", "url": "https://vietnambiz.vn/cafe-amazon-vo-mong-tai-viet-nam-lac-nhip-tu-san-pham-toi-trai-nghiem-khien-ong-lon-do-uong-thai-thua-cuoc-truoc-phuc-long-highlands-katinat-2025822115516242.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VietnamBiz · goc khuat dong tien tieu thuong tim cach ne thue qua nhieu tai khoan", "url": "https://vietnambiz.vn/goc-khuat-dong-tien-tieu-thuong-tim-cach-ne-thue-qua-nhieu-tai-khoan-2025611132934705.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CAND · chuyen doi thue buoc chuyen minh cho kinh te tieu thuong i771921", "url": "https://cand.com.vn/Kinh-te-Van-hoa-The-Thao/chuyen-doi-thue-buoc-chuyen-minh-cho-kinh-te-tieu-thuong-i771921", "source": "CAND", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Thương hiệu Việt ở thị trường trà sữa: Ai đã biến mất và ai đang sống đời rực rỡ?", "url": "https://vietnambiz.vn/thuong-hieu-viet-o-thi-truong-tra-sua-ai-da-bien-mat-va-ai-dang-song-doi-ruc-ro-202561011277896.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Lam Khuê đóng cửa: Chuyên gia chỉ ra những 'điểm mù' có thể đánh sập bất kỳ doanh nghiệp nào", "url": "https://vietnambiz.vn/lam-khue-dong-cua-chuyen-gia-chi-ra-nhung-diem-mu-co-the-danh-sap-bat-ky-doanh-nghiep-nao-202571892858737.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · chuyen gi day gen z to chuc tiec cuoi tai nha hang buffet chuyen gia danh gia nguoi tre chuong", "url": "https://cafebiz.vn/chuyen-gi-day-gen-z-to-chuc-tiec-cuoi-tai-nha-hang-buffet-chuyen-gia-danh-gia-nguoi-tre-chuong-su-tiet-kiem-va-tu-do-176250828114819882.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Loạt thương hiệu đồ uống \"thay áo mới\" hưởng ứng ngày 2/9", "url": "https://cafebiz.vn/loat-thuong-hieu-do-uong-thay-ao-moi-huong-ung-ngay-2-9-chuyen-gia-danh-gia-thuong-hieu-viet-thoat-loi-mon-copy-paste-bien-cua-hang-thanh-dai-su-van-hoa-thay-vi-chi-noi-ban-176250829082556085.chn", "source": "CafeBiz", "badges": ["Long form"]}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · gia soc 7k 69k gay bao nganh fb chuyen gia nhan dinh ky nguyen sieu tiet kiem mo rong thi truon", "url": "https://cafebiz.vn/gia-soc-7k-69k-gay-bao-nganh-fb-chuyen-gia-nhan-dinh-ky-nguyen-sieu-tiet-kiem-mo-rong-thi-truong-nhung-de-doa-quan-binh-dan-176250903173302316.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "The Saigon Times · ap luc chi phi khien ho kinh doanh chan chu voi hoa don dien tu", "url": "https://thesaigontimes.vn/ap-luc-chi-phi-khien-ho-kinh-doanh-chan-chu-voi-hoa-don-dien-tu/", "source": "The Saigon Times", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Gen Z bỏ văn phòng, đổ xô tới Co-working Café và cà phê 24h", "url": "https://cafebiz.vn/gen-z-bo-van-phong-do-xo-toi-co-working-cafe-va-ca-phe-24h-chuyen-gia-fb-khang-dinh-day-la-cua-sang-cho-quan-ca-phe-mo-chuoi-176250908161806872.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VietnamBiz · cong ty me highlands coffee thau tom paris baguette viet nam huong toi he sinh thai fb da phan", "url": "https://vietnambiz.vn/cong-ty-me-highlands-coffee-thau-tom-paris-baguette-viet-nam-huong-toi-he-sinh-thai-fb-da-phan-khuc-202591185947734.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "The Saigon Times · thi truong fb tang nhiet mat bang kinh doanh duoc ham nong tro lai", "url": "https://thesaigontimes.vn/thi-truong-fb-tang-nhiet-mat-bang-kinh-doanh-duoc-ham-nong-tro-lai/", "source": "The Saigon Times", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · vietnam fb summit 2025 khi chuyen gia va nha sang lap cung ban ve vung vang va thich ung", "url": "https://cafebiz.vn/vietnam-fb-summit-2025-khi-chuyen-gia-va-nha-sang-lap-cung-ban-ve-vung-vang-va-thich-ung-17625092509570757.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Thị trường bánh trung thu 2025: Loại nhân mới hút khách", "url": "https://mekongasean.vn/thi-truong-banh-trung-thu-2025-loai-nhan-moi-hut-khach-46728.html", "source": "Mekong ASEAN", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Người Lao Động · mot thuong hieu banh mi 21 nam o tp hcm dong cua", "url": "https://nld.com.vn/mot-thuong-hieu-banh-mi-21-nam-o-tp-hcm-dong-cua-196251001183028125.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · mot thuong hieu banh my 21 nam tuoi tuyen bo dong cua vinh vien", "url": "https://cafebiz.vn/mot-thuong-hieu-banh-my-21-nam-tuoi-tuyen-bo-dong-cua-vinh-vien-176251002144514674.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VietnamBiz · nha dau tu thai lan rut khoi lien doanh cafe amazon tai viet nam", "url": "https://vietnambiz.vn/nha-dau-tu-thai-lan-rut-khoi-lien-doanh-cafe-amazon-tai-viet-nam-2025108122633584.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · nha sang lap com tho anh nguyen nam nao cung co phan anh nhung thuc te chi mot den hai co so ga", "url": "https://cafebiz.vn/nha-sang-lap-com-tho-anh-nguyen-nam-nao-cung-co-phan-anh-nhung-thuc-te-chi-mot-den-hai-co-so-gap-van-de-con-lai-van-van-hanh-binh-thuong-176251013094035499.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · ong chu chuoi dao matcha dong goi bi quyet thanh cong doanh nghiep lon len quy trinh phai ran n", "url": "https://cafebiz.vn/ong-chu-chuoi-dao-matcha-dong-goi-bi-quyet-thanh-cong-doanh-nghiep-lon-len-quy-trinh-phai-ran-nhu-ky-luat-quan-doi-176251011113207324.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VTC News · nhung tin hieu tich cuc phia sau lan song hon 50 000 cua hang f b bien mat ar971212", "url": "https://vtcnews.vn/nhung-tin-hieu-tich-cuc-phia-sau-lan-song-hon-50-000-cua-hang-f-b-bien-mat-ar971212.html", "source": "VTC News", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "VTC News · genz co 50 trieu dong mo quan ban do uong duoc khong ar984424", "url": "https://vtcnews.vn/genz-co-50-trieu-dong-mo-quan-ban-do-uong-duoc-khong-ar984424.html", "source": "VTC News", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2025", "title": "VTC News · chu quan che khach lay lai 1 000 tien thua loi co ban trong kinh doanh ar985528", "url": "https://vtcnews.vn/chu-quan-che-khach-lay-lai-1-000-tien-thua-loi-co-ban-trong-kinh-doanh-ar985528.html", "source": "VTC News", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Vụ chủ quán chê khách lấy 1.000 đồng: Tiền của mình, có gì mà không thoáng? | Báo Dân trí", "url": "https://dantri.com.vn/du-lich/vu-chu-quan-che-khach-lay-1000-dong-tien-cua-minh-co-gi-ma-khong-thoang-20251106112538174.htm", "source": "dantri.com.vn", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Cơn sóng trà sữa 7k đang làm chao đảo thị trường", "url": "https://cafebiz.vn/con-song-tra-sua-7000-dong-dang-lam-chao-dao-thi-truong-chuyen-gia-nguyen-thai-binh-canh-bao-day-khong-phai-cuoc-dua-xuong-day-ma-la-phep-thu-176251113075235362.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "CafeBiz · cafe amazon dong cua toan bo cua hang chuyen gia nguyen thai binh danh gia thi truong viet nam", "url": "https://cafebiz.vn/cafe-amazon-dong-cua-toan-bo-cua-hang-chuyen-gia-nguyen-thai-binh-danh-gia-thi-truong-viet-nam-co-dac-thu-4f-ma-chuoi-ngoai-can-hieu-ro-176251122071907136.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Café Amazon rời Việt Nam, trà sữa Mixue âm thầm giảm số cửa hàng", "url": "https://nld.com.vn/cafe-amazon-roi-viet-nam-tra-sua-mixue-am-tham-giam-so-cua-hang-196251122102347914.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Người Lao Động · nhanh chong chan gia thuc pham leo thang", "url": "https://nld.com.vn/nhanh-chong-chan-gia-thuc-pham-leo-thang-196251120214358189.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "'Chiến trường' mới của Starbucks, Highlands Coffee - Kinh doanh - ZNEWS.VN", "url": "https://znews.vn/chien-truong-moi-cua-starbucks-highlands-coffee-post1605388.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "Chiến lược mới của các thương hiệu cà phê lớn - DNTT online", "url": "https://doanhnghieptiepthi.vn/chien-luoc-moi-cua-cac-thuong-hieu-ca-phe-lon-161251125144425421.htm", "source": "Doanh nghiệp & Tiếp thị", "badges": []}, {"section": "Bài viết", "year": "2025", "title": "\"Đại thanh lọc\" ngành F&B: Chuyên gia chỉ 5 nguyên tắc vàng để giữ chân khách hàng", "url": "https://daibieunhandan.vn/dai-thanh-loc-nganh-f-b-chuyen-gia-chi-5-nguyen-tac-vang-de-giu-chan-khach-hang-10401740.html", "source": "Đại Biểu Nhân Dân", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2025", "title": "Chủ tịch F&B Investment: \"Năm 2026 mở ra chu kỳ cạnh tranh mới của ngành F&B\"", "url": "https://daibieunhandan.vn/chu-tich-f-amp-b-investment-nam-2026-mo-ra-chu-ky-canh-tranh-moi-cua-nganh-f-amp-b-10401966.html", "source": "Đại Biểu Nhân Dân", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "CafeBiz · chuyen gia noi gi khi highlands coffee bi mo xe thong cao the coffee house lai duoc cong dong m", "url": "https://cafebiz.vn/chuyen-gia-noi-gi-khi-highlands-coffee-bi-mo-xe-thong-cao-the-coffee-house-lai-duoc-cong-dong-mang-thong-cam-176260111125534705.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Znews · hang quan chat vat bam tru mat duong tphcm post1618637", "url": "https://znews.vn/hang-quan-chat-vat-bam-tru-mat-duong-tphcm-post1618637.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Các chuỗi F&B tại TP.HCM 'bành trướng' | Znews.vn", "url": "https://znews.vn/cac-chuoi-f-b-tai-tphcm-banh-truong-post1619315.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "\"Quán cà phê im lặng\": Khi kinh doanh đồ uống thành kinh doanh công năng - Chuyên trang VTV9 - Thời báo VTV", "url": "https://vtv9.vtv.vn/quan-ca-phe-im-lang-khi-kinh-doanh-do-uong-thanh-kinh-doanh-cong-nang", "source": "VTV9", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "VietnamBiz · doc quyen meituan sap vao viet nam", "url": "https://vietnambiz.vn/doc-quyen-meituan-sap-vao-viet-nam-2026211124753863.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "CafeBiz · de che giao hang ty do cua trung quoc meituan bi don se vao viet nam chuyen gia danh gia ngan h", "url": "https://cafebiz.vn/de-che-giao-hang-ty-do-cua-trung-quoc-meituan-bi-don-se-vao-viet-nam-chuyen-gia-danh-gia-ngan-han-chua-tac-dong-lon-nhung-co-the-hut-nguoi-ban-hang-khi-phi-san-hien-o-muc-2530-176260211181348148.chn", "source": "CafeBiz", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Quán ăn nổi tiếng TP.HCM đột ngột đóng cửa trước năm mới | Znews.vn", "url": "https://znews.vn/quan-an-noi-tieng-tphcm-dot-ngot-dong-cua-truoc-nam-moi-post1626656.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "[Infographic] Dự báo F&B 2026: Highlands hay Katinat vẫn mở rộng liên tục trong khi hàng vạn quán nhỏ đóng cửa", "url": "https://vietnambiz.vn/infographic-du-bao-fb-2026-highlands-hay-katinat-van-mo-rong-lien-tuc-trong-khi-hang-van-quan-nho-dong-cua-202621011224352.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Dự báo đáng chú ý về lĩnh vực F&B năm 2026 - DNTT online", "url": "https://doanhnghieptiepthi.vn/du-bao-dang-chu-y-ve-linh-vuc-fb-nam-2026-161260210215241429.htm", "source": "Doanh nghiệp & Tiếp thị", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "VietnamBiz · thi truong fb va cuoc chien tren ban tiec", "url": "https://vietnambiz.vn/thi-truong-fb-va-cuoc-chien-tren-ban-tiec-2026210163210141.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Siêu thị cũng tham gia thị trường đồ cúng Thần Tài, bộ tam sên giá chưa tới 95.000 đồng", "url": "https://nld.com.vn/sieu-thi-cung-tham-gia-thi-truong-do-cung-than-tai-bo-tam-sen-gia-chua-toi-95000-dong-196260226104337097.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Tiệm cà phê như 'ngôi nhà miền Tây' ở TP.HCM bất ngờ đóng cửa sau Tết | Znews.vn", "url": "https://znews.vn/tiem-ca-phe-nhu-ngoi-nha-mien-tay-o-tphcm-bat-ngo-dong-cua-sau-tet-post1630555.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Người Lao Động · sieu thi lan sang mat hang dac thu", "url": "https://nld.com.vn/sieu-thi-lan-sang-mat-hang-dac-thu-196260306211155794.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Người Lao Động · no luc giu gia hang hoa", "url": "https://nld.com.vn/no-luc-giu-gia-hang-hoa-196260310211152156.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Vì sao các cặp đôi trẻ đổ xô đặt tiệc cưới sớm trước cả năm? - Báo Pháp Luật TP.HCM", "url": "https://baomoi.com/vi-sao-cac-cap-doi-tre-do-xo-dat-tiec-cuoi-som-truoc-ca-nam-c54683235.epi", "source": "Báo Mới", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Quán ăn chật vật giữ giá", "url": "https://nld.com.vn/quan-an-chat-vat-giu-gia-196260313214829034.htm", "source": "Người Lao Động", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "CafeBiz · sau 6 nam rut lui huyen thoai tra mat ngu tung doi dau phuc long chuan bi mo lai cua hang tai h", "url": "https://cafebiz.vn/sau-6-nam-rut-lui-huyen-thoai-tra-mat-ngu-tung-doi-dau-phuc-long-chuan-bi-mo-lai-cua-hang-tai-ha-noi-17626032614065409.chn", "source": "CafeBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Loạt quán cà phê, nhà hàng vừa đóng cửa của nghệ sĩ Việt | Znews.vn", "url": "https://znews.vn/loat-quan-ca-phe-nha-hang-vua-dong-cua-cua-nghe-si-viet-post1637452.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Cốc bia, chai nước, bao nilon… tăng giá trước ‘sức nóng’ của thị trường xăng dầu", "url": "https://vietnambiz.vn/coc-bia-chai-nuoc-bao-nilon-tang-gia-truoc-suc-nong-cua-thi-truong-xang-dau-20264215404336.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Vào quán cà phê ngồi 10 tiếng chỉ gọi 1 ly nước: Thu phí hay làm ngơ để giữ khách?", "url": "https://nld.com.vn/vao-quan-ca-phe-ngoi-10-tieng-chi-goi-1-ly-nuoc-thu-phi-hay-lam-ngo-de-giu-khach-196260406121902965.htm", "source": "Người Lao Động", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Thấy gì từ mức doanh thu 726.500 tỷ đồng của ngành F&B?", "url": "https://congthuong.vn/thay-gi-tu-muc-doanh-thu-726-500-ty-dong-cua-nganh-f-b-451070.html", "source": "Báo Công Thương", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Vì sao Jollibee hút khách dù người tiêu dùng thắt chặt chi tiêu?", "url": "https://theleader.vn/vi-sao-jollibee-hut-khach-du-nguoi-tieu-dung-that-chat-chi-tieu-d45333.html", "source": "TheLEADER", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Bất ngờ về rau sâm biển giá 350.000 đồng/kg", "url": "https://nld.com.vn/bat-ngo-ve-loai-rau-350000-dong-kg-van-duoc-nguoi-o-tp-hcm-xem-la-re-196260412155616796.htm", "source": "Người Lao Động", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Nhà hàng fine dining ở phố cổ Hà Nội đóng cửa sau 30 năm | Znews.vn", "url": "https://znews.vn/nha-hang-fine-dining-o-pho-co-ha-noi-dong-cua-sau-30-nam-post1642495.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Giá cả sinh hoạt vẫn chưa hạ nhiệt", "url": "https://nld.com.vn/gia-ca-sinh-hoat-van-chua-ha-nhiet-196260416205405051.htm", "source": "Người Lao Động", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "VietnamBiz · chung nha voi ong lon the coffee house sau mot nam van bao lo tong giam doc golden gate noi gi", "url": "https://vietnambiz.vn/chung-nha-voi-ong-lon-the-coffee-house-sau-mot-nam-van-bao-lo-tong-giam-doc-golden-gate-noi-gi-202642012312631.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "VietnamBiz · mixue dong cua hang loat tai viet nam chuyen gia danh gia dieu gi dang dien ra tren thi truong", "url": "https://vietnambiz.vn/mixue-dong-cua-hang-loat-tai-viet-nam-chuyen-gia-danh-gia-dieu-gi-dang-dien-ra-tren-thi-truong-fb-202642295752445.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Người Lao Động · thay gi tu viec chuoi tra sua mixue dong hang tram cua hang", "url": "https://nld.com.vn/thay-gi-tu-viec-chuoi-tra-sua-mixue-dong-hang-tram-cua-hang-196260422115034209.htm", "source": "Người Lao Động", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Thanh Niên · vi sao hang quan tang gia de giam kho", "url": "https://thanhnien.vn/vi-sao-hang-quan-tang-gia-de-giam-kho-185260424204234606.htm", "source": "Thanh Niên", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Ông lớn F&B thay đổi cuộc chơi: Highlands bán trà 1 đồng, Phê La và The Coffee House ‘thử thách’ ví tiền khách hàng với mức giá mới", "url": "https://vietnambiz.vn/ong-lon-fb-thay-doi-cuoc-choi-highlands-ban-tra-1-dong-phe-la-va-the-coffee-house-thu-thach-vi-tien-khach-hang-voi-muc-gia-moi-202642894112864.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Thế trận gà rán", "url": "https://nhipcaudautu.vn/kinh-doanh/the-tran-ga-ran-3364899/", "source": "Nhịp Cầu Đầu Tư", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Ứng dụng robot và A.I mở ra cơ hội ngành dịch vụ - Chuyên trang VTV9 - Thời báo VTV", "url": "https://vtv9.vtv.vn/ung", "source": "VTV9", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Phí chồng phí dồn dập từ Shopee, TikTok Shop: Người bán cuống cuồng bỏ sàn, đổ xô tìm mặt bằng vật lý", "url": "https://vietnambiz.vn/phi-chong-phi-don-dap-tu-shopee-tiktok-shop-nguoi-ban-cuong-cuong-bo-san-do-xo-tim-mat-bang-vat-ly-202657145812257.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Znews · chuyen gi dang xay ra voi phe la post1650247", "url": "https://znews.vn/chuyen-gi-dang-xay-ra-voi-phe-la-post1650247.html", "source": "Znews", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Thanh Niên · thuc pham ban an mon suc mua", "url": "https://thanhnien.vn/thuc-pham-ban-an-mon-suc-mua-185260514190529337.htm", "source": "Thanh Niên", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "VietnamBiz · bach hoa xanh bac tien voi chien luoc khac thuong chuyen gia danh gia doi thu lon nhat khong ch", "url": "https://vietnambiz.vn/bach-hoa-xanh-bac-tien-voi-chien-luoc-khac-thuong-chuyen-gia-danh-gia-doi-thu-lon-nhat-khong-chi-la-winmart-brg-hay-coop-food-202652771540907.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Vỉa hè 'tự tạo' của quán cà phê Hà Nội | Znews.vn", "url": "https://znews.vn/via-he-tu-tao-cua-quan-ca-phe-ha-noi-post1654922.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Coca-Cola mượn đôi đũa làm công cụ quảng cáo, nhìn lại 'vết xe đổ' của Burger King, chuyên gia nói thẳng một điều", "url": "https://vietnambiz.vn/coca-cola-muon-doi-dua-lam-cong-cu-quang-cao-nhin-lai-vet-xe-do-cua-burger-king-chuyen-gia-noi-thang-mot-dieu-202663121233807.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Vừa đóng hàng loạt điểm bán tại Việt Nam, đế chế kem 10.000 đồng Mixue lại rơi vào \"thế gọng kìm\" của 2 đồng hương Bingxue và Bingchun", "url": "https://cafef.vn/vua-dong-hang-loat-diem-ban-tai-viet-nam-de-che-kem-10000-dong-mixue-lai-roi-vao-the-gong-kim-cua-2-dong-huong-bingxue-va-bingchun-188260604093954502.chn", "source": "CafeF", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Việt Nam có 11 nhà hàng được trao một sao Michelin", "url": "https://mekongasean.vn/viet-nam-co-11-nha-hang-duoc-trao-mot-sao-michelin-55933.html", "source": "Mekong ASEAN", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Trải nghiệm văn hóa đa tầng tại các nhà hàng ẩm thực Việt - Giải Trí Văn Hóa", "url": "https://www.giaitrivanhoa.vn/2026/06/trai-nghiem-van-hoa-tang-tai-cac-nha.html", "source": "Giải Trí Văn Hóa", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Chia lại pizza", "url": "https://nhipcaudautu.vn/kinh-doanh/chia-lai-pizza-3365165/", "source": "Nhịp Cầu Đầu Tư", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Gánh nặng 'mặt bằng số' trên sàn điện tử: Doanh nghiệp dịch chuyển dòng tiền, quay lại cuộc đua điểm bán vật lý", "url": "https://doanhnhan.baophapluat.vn/ganh-nang-mat-bang-so-tren-san-dien-tu-doanh-nghiep-dich-chuyen-dong-tien-quay-lai-cuoc-dua-diem-ban-vat-ly.html", "source": "Doanh Nhân & Pháp Luật", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Chủ quán cà phê bối rối tiền bản quyền khi mở nhạc từ YouTube, Spotify | Znews.vn", "url": "https://znews.vn/chu-quan-ca-phe-boi-roi-tien-ban-quyen-khi-mo-nhac-tu-youtube-spotify-post1661027.html", "source": "Znews", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "VietnamBiz · bat ngo chuoi ca phe lon nhat viet nam khong phai highlands am tham chiem thi truong bang chien", "url": "https://vietnambiz.vn/bat-ngo-chuoi-ca-phe-lon-nhat-viet-nam-khong-phai-highlands-am-tham-chiem-thi-truong-bang-chien-luoc-nhu-mixue-2026629145445253.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Thương Gia · dinh nghia lai gia tri cua mat bang trong nganh fb post571273", "url": "https://thuonggiaonline.vn/dinh-nghia-lai-gia-tri-cua-mat-bang-trong-nganh-fb-post571273.html?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExaDIxdG05cnBCNzdBc3dsVXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7VfT1JcteV-1l3yf8ScwznKzu3W7qPGxhd_5kT0bcrCNo23GvGrNQITOqgvw_aem_79WbNYvQuNsAy83eTotG7Q", "source": "Thương Gia", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Phúc Long, Phê La, Gong Cha, Koi Thé đã phủ kín thị trường: Starbucks còn cửa nào với trà sữa?", "url": "https://vietnambiz.vn/phuc-long-phe-la-gong-cha-koi-the-da-phu-kin-thi-truong-starbucks-con-cua-nao-voi-tra-sua-20267110183370.htm", "source": "VietnamBiz", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Tô phở ‘cố thủ’ giá 50.000 đồng: Giá xăng thực sự chiếm bao nhiêu?", "url": "https://vtcnews.vn/to-pho-co-thu-gia-50-000-dong-gia-xang-thuc-su-chiem-bao-nhieu-ar1026881.html", "source": "VTC News", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Giá xăng đã giảm, vì sao giá tô phở, ly cà phê chưa giảm? | Znews.vn", "url": "https://znews.vn/gia-xang-da-giam-vi-sao-gia-to-pho-ly-ca-phe-chua-giam-post1665466.html", "source": "Znews", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Giá xăng giảm, hàng quán vẫn \"đau đầu\" vì 3 nhóm chi phí lớn", "url": "https://daibieunhandan.vn/gia-xang-giam-hang-quan-van-dau-dau-vi-3-nhom-chi-phi-lon-10422565.html", "source": "Đại Biểu Nhân Dân", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Giá xăng giảm rồi, điều gì sẽ kéo giá hàng hóa xuống?", "url": "https://vtcnews.vn/gia-xang-giam-roi-dieu-gi-se-keo-gia-hang-hoa-xuong-ar1027476.html", "source": "VTC News", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Thương Gia · cuoc chien tra sua tren thi truong viet post571646", "url": "https://thuonggiaonline.vn/cuoc-chien-tra-sua-tren-thi-truong-viet-post571646.amp", "source": "Thương Gia", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Phê La thêm cà phê vào menu sau 5 năm chuẩn bị: Mở rộng thị trường hay pha loãng thương hiệu?", "url": "https://vietnambiz.vn/phe-la-them-ca-phe-vao-menu-sau-5-nam-chuan-bi-mo-rong-thi-truong-hay-pha-loang-thuong-hieu-2026727184518552.htm", "source": "VietnamBiz", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Bán đồ uống đắt ngang Starbucks, chuỗi chocolate thủ công đóng toàn bộ cửa hàng sau 5 năm", "url": "https://vietnambiz.vn/ban-do-uong-dat-ngang-starbucks-chuoi-chocolate-thu-cong-dong-toan-bo-cua-hang-sau-5-nam-202684161852402.htm", "source": "VietnamBiz", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Trào lưu ẩm thực Trung Quốc tại Việt Nam: Cơ hội kinh doanh ngắn hạn hay \"canh bạc\" rủi ro?", "url": "https://daibieunhandan.vn/trao-luu-am-thuc-trung-quoc-tai-viet-nam-co-hoi-kinh-doanh-ngan-han-hay-canh-bac-rui-ro-10426365.html", "source": "Đại Biểu Nhân Dân", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Cuộc đua giành 'đất vàng' di sản của Starbucks, Highlands và Phê La | Znews.vn", "url": "https://lifestyle.zingnews.vn/cuoc-dua-gianh-dat-vang-di-san-cua-starbucks-highlands-va-phe-la-post1674584.html", "source": "Znews", "badges": ["Video/quote", "E"]}, {"section": "Bài viết", "year": "2026", "title": "Sự thật về ly cà phê view triệu đô tại Fansipan, Tràng An: Highlands, Starbucks, Phê La đang 'đốt tiền' để tính toán điều gì?", "url": "https://vietnambiz.vn/su-that-ve-ly-ca-phe-view-trieu-do-tai-fansipan-trang-an-highlands-starbucks-phe-la-dang-dot-tien-de-tinh-toan-dieu-gi-202687161856886.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Đi ăn lẩu 69K, cuối cùng hóa đơn hết 500K: Khách hàng đã bị dẫn dụ bởi ‘bẫy’ quảng cáo giá rẻ thế nào?", "url": "https://vietnambiz.vn/di-an-lau-69k-cuoi-cung-hoa-don-het-500k-khach-hang-da-bi-dan-du-boi-bay-quang-cao-gia-re-the-nao-2026810103617379.htm", "source": "VietnamBiz", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Báo Mới · khong chi ban ca phe cac chuoi f b dang tranh vi tri trong ky uc du khach r55801205.epi", "url": "https://baomoi.com/khong-chi-ban-ca-phe-cac-chuoi-f-b-dang-tranh-vi-tri-trong-ky-uc-du-khach-r55801205.epi", "source": "Báo Mới", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Thương Gia · khong chi ban ca phe cac chuoi fb dang tranh vi tri trong ky uc du khach post572159", "url": "https://thuonggiaonline.vn/khong-chi-ban-ca-phe-cac-chuoi-fb-dang-tranh-vi-tri-trong-ky-uc-du-khach-post572159.html", "source": "Thương Gia", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Nhịp Cầu Đầu Tư · vua lau nuong an minh 3365549", "url": "https://nhipcaudautu.vn/kinh-doanh/vua-lau-nuong-an-minh-3365549/", "source": "Nhịp Cầu Đầu Tư", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Vietnam F&B Summit 2026: Giải mã những 'lằn ranh' đang định hình ngành F&B Việt", "url": "https://tienphong.vn/vietnam-fb-summit-2026-giai-ma-nhung-lan-ranh-dang-dinh-hinh-nganh-fb-viet-post1869099.tpo", "source": "Tiền Phong", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Hiệu ứng Michelin và chiến lược quảng bá điểm đến từ ẩm thực", "url": "https://vietnamtourism.gov.vn/post/68372", "source": "Cục Du lịch Quốc gia", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Nhượng quyền F&B: Khi \"cuộc đua\" không còn tính bằng số cửa hàng", "url": "https://daibieunhandan.vn/nhuong-quyen-f-b-khi-cuoc-dua-khong-con-tinh-bang-so-cua-hang-10429243.html", "source": "Đại Biểu Nhân Dân", "badges": ["Video/quote"]}, {"section": "Bài viết", "year": "2026", "title": "Thanh Niên · gia tang hang quan van mong lai", "url": "https://thanhnien.vn/gia-tang-hang-quan-van-mong-lai-185260909234017189.htm", "source": "Thanh Niên", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Thanh Niên · hon 30000 cua hang moi mo lan song tra mat bang chung lai", "url": "https://thanhnien.vn/hon-30000-cua-hang-moi-mo-lan-song-tra-mat-bang-chung-lai-18526091009342809.htm", "source": "Thanh Niên", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "VietnamBiz · mo hinh tra sua gia re thoai trao", "url": "https://vietnambiz.vn/mo-hinh-tra-sua-gia-re-thoai-trao-2026910155949605.htm", "source": "VietnamBiz", "badges": []}, {"section": "Bài viết", "year": "2026", "title": "Nghịch lý trào lưu đồ uống giá rẻ, dòng tiền dịch chuyển sang phân khúc tầm trung", "url": "https://doanhnhan.baophapluat.vn/nghich-ly-trao-luu-do-uong-gia-re-dong-tien-dich-chuyen-sang-phan-khuc-tam-trung.html", "source": "Doanh Nhân & Pháp Luật", "badges": []}];
+const SECTIONS = [...new Set(DATA.map(x=>x.section))];
+const YEARS = [...new Set(DATA.map(x=>x.year).filter(x=>/^\d{4}$/.test(x)))].sort((a,b)=>b-a);
+let state={section:"Tất cả",year:"Tất cả",q:""};
+
+const $=s=>document.querySelector(s);
+const escapeHTML=s=>(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
+const initials=s=>{
+  if(s==="Facebook") return "f";
+  if(s==="YouTube") return "▶";
+  if(s==="TikTok") return "♪";
+  if(s==="Instagram") return "◎";
+  return s.split(/\s+/).slice(0,2).map(x=>x[0]).join("").toUpperCase();
+};
+
+function makeFilters(){
+  const tf=$("#typeFilters");
+  ["Tất cả",...SECTIONS].forEach(x=>{
+    const b=document.createElement("button"); b.className="filter"+(x===state.section?" active":""); b.textContent=x;
+    b.onclick=()=>{state.section=x; makeFilters(); render();}; tf.appendChild(b);
+  });
+  const yf=$("#yearFilters");
+  ["Tất cả",...YEARS].forEach(x=>{
+    const b=document.createElement("button"); b.className="filter"+(x===state.year?" active":""); b.textContent=x==="Tất cả"?"Mọi năm":x;
+    b.onclick=()=>{state.year=x; makeFilters(); render();}; yf.appendChild(b);
+  });
+}
+function makeFiltersReset(){
+  $("#typeFilters").innerHTML=""; $("#yearFilters").innerHTML=""; makeFilters();
+}
+
+function filtered(){
+  const nq=state.q.trim().toLocaleLowerCase("vi");
+  return DATA.filter(x=>{
+    if(state.section!=="Tất cả" && x.section!==state.section) return false;
+    if(state.year!=="Tất cả" && x.year!==state.year) return false;
+    if(nq){
+      const hay=[x.title,x.source,x.year,x.section,x.url,...(x.badges||[])].join(" ").toLocaleLowerCase("vi");
+      if(!hay.includes(nq)) return false;
+    }
+    return true;
+  });
+}
+function card(x){
+  const badges=(x.badges||[]).map(b=>`<span class="badge">${escapeHTML(b)}</span>`).join("");
+  return `<article class="card">
+    <div class="source-icon">${escapeHTML(initials(x.source))}</div>
+    <div>
+      <div class="title">${escapeHTML(x.title)}</div>
+      <div class="meta"><span class="source">${escapeHTML(x.source)}</span><span>•</span><span>${escapeHTML(x.year)}</span>${badges}</div>
+    </div>
+    <a class="open" href="${escapeHTML(x.url)}" target="_blank" rel="noopener noreferrer" aria-label="Mở liên kết">↗</a>
+  </article>`;
+}
+function render(){
+  const items=filtered(), root=$("#content");
+  root.innerHTML="";
+  for(const sec of SECTIONS){
+    const si=items.filter(x=>x.section===sec);
+    if(!si.length) continue;
+    const section=document.createElement("section"); section.className="section";
+    section.innerHTML=`<div class="section-head"><h2>${escapeHTML(sec)}</h2><div class="section-count">${si.length} liên kết</div></div>`;
+    const secYears=[...new Set(si.map(x=>x.year))].sort((a,b)=>{
+      if(a==="Khác") return 1; if(b==="Khác") return -1; return Number(b)-Number(a);
+    });
+    secYears.forEach(y=>{
+      const yi=si.filter(x=>x.year===y);
+      const block=document.createElement("div"); block.className="year-block";
+      block.innerHTML=`<div class="year-title">${escapeHTML(y)}</div><div class="grid">${yi.map(card).join("")}</div>`;
+      section.appendChild(block);
+    });
+    root.appendChild(section);
+  }
+  $("#shown").textContent=items.length; $("#total").textContent=DATA.length;
+  $("#empty").style.display=items.length?"none":"block";
+  const bits=[];
+  if(state.section!=="Tất cả") bits.push(state.section);
+  if(state.year!=="Tất cả") bits.push(state.year);
+  if(state.q.trim()) bits.push(`“${state.q.trim()}”`);
+  $("#activeLabel").textContent=bits.length?bits.join(" · "):"Tất cả nội dung";
+}
+
+function cleanText(s){ return (s||"").replace(/\s+/g," ").trim(); }
+function detectSource(url){
+  try{
+    const d=(new URL(url)).hostname.toLowerCase().replace(/^www\./,"");
+    const map={
+      "facebook.com":"Facebook","youtube.com":"YouTube","youtu.be":"YouTube",
+      "tiktok.com":"TikTok","vt.tiktok.com":"TikTok","instagram.com":"Instagram",
+      "cafebiz.vn":"CafeBiz","vietnambiz.vn":"VietnamBiz","znews.vn":"Znews",
+      "vnexpress.net":"VnExpress","vtv.vn":"VTV","nld.com.vn":"Người Lao Động",
+      "thanhnien.vn":"Thanh Niên","tienphong.vn":"Tiền Phong","mekongasean.vn":"Mekong ASEAN",
+      "nhipcaudautu.vn":"Nhịp Cầu Đầu Tư","thesaigontimes.vn":"The Saigon Times",
+      "baomoi.com":"Báo Mới","baodautu.vn":"Báo Đầu Tư","theleader.vn":"TheLEADER",
+      "congthuong.vn":"Báo Công Thương","plo.vn":"PLO","cand.com.vn":"CAND",
+      "vnbusiness.vn":"VnBusiness","diendandoanhnghiep.vn":"Diễn đàn Doanh nghiệp",
+      "phunuonline.com.vn":"Phụ Nữ Online","nguoiquansat.vn":"Người Quan Sát",
+      "fnbstudy.vn":"FNBStudy","ipos.vn":"iPOS.vn","daibieunhandan.vn":"Đại Biểu Nhân Dân",
+      "vtcnews.vn":"VTC News","cafef.vn":"CafeF"
+    };
+    return map[d]||d;
+  }catch(e){ return "Nguồn khác"; }
+}
+function metaBadges(t){
+  const u=(t||"").toUpperCase(), a=[];
+  if(u.includes("LONG FORM")) a.push("Long form");
+  if(/(^|[\s(])V([\s)]|$)/.test(u)) a.push("Video/quote");
+  if(/(^|[\s(])E([\s)]|$)/.test(u)) a.push("E");
+  if(u.includes("MAPDY")) a.push("Mapdy");
+  if(u.includes("TỔNG HỢP")) a.push("Tổng hợp");
+  return a;
+}
+function derivedTitle(url){
+  try{
+    const u=new URL(url), src=detectSource(url);
+    let slug=decodeURIComponent(u.pathname.split("/").filter(Boolean).pop()||"");
+    slug=slug.replace(/\.(html?|chn|tpo|amp)$/i,"").replace(/[-_]+/g," ").replace(/\b\d{8,}\b/g," ").replace(/\s+/g," ").trim();
+    return slug.length>8 ? `${src} · ${slug.slice(0,95)}` : `Mở nội dung trên ${src}`;
+  }catch(e){ return "Mở liên kết"; }
+}
+function sectionByText(t,current){
+  const x=cleanText(t).toUpperCase();
+  if(x==="VIDEO") return "Video";
+  if(x==="PODCAST") return "Podcast";
+  if(x==="BÀI VIẾT"||x==="BAI VIET") return "Bài viết";
+  return current;
+}
+async function parseDocx(file){
+  if(typeof JSZip==="undefined") throw new Error("Không tải được thư viện đọc DOCX. Hãy kết nối Internet rồi mở lại file HTML.");
+  const zip=await JSZip.loadAsync(await file.arrayBuffer());
+  const docXml=await zip.file("word/document.xml").async("string");
+  const relPath="word/_rels/document.xml.rels";
+  const relXml=zip.file(relPath) ? await zip.file(relPath).async("string") : "";
+  const parser=new DOMParser();
+  const doc=parser.parseFromString(docXml,"application/xml");
+  const relDoc=parser.parseFromString(relXml||"<Relationships/>","application/xml");
+  const rels={};
+  [...relDoc.getElementsByTagName("*")].forEach(n=>{
+    if(n.localName==="Relationship"){
+      const id=n.getAttribute("Id"), target=n.getAttribute("Target");
+      if(id&&target) rels[id]=target;
+    }
+  });
+
+  let section="Hồ sơ & tổng hợp", year="Khác";
+  const result=[], seen=new Set();
+  const paras=[...doc.getElementsByTagNameNS("*","p")];
+  for(const p of paras){
+    const pText=cleanText([...p.getElementsByTagNameNS("*","t")].map(n=>n.textContent||"").join(""));
+    section=sectionByText(pText,section);
+    const ym=pText.match(/^(202\d)(?:\b|\s|–|-)/);
+    const pure=/^202\d$/.test(pText);
+    if((ym||pure) && ![...p.getElementsByTagNameNS("*","hyperlink")].length){
+      year=pure?pText:ym[1];
+      continue;
+    }
+    if(["VIDEO","PODCAST","BÀI VIẾT","BAI VIET"].includes(pText.toUpperCase())) continue;
+
+    const links=[...p.getElementsByTagNameNS("*","hyperlink")];
+    for(const h of links){
+      const rid=h.getAttributeNS("http://schemas.openxmlformats.org/officeDocument/2006/relationships","id")
+             ||h.getAttribute("r:id");
+      const url=rels[rid];
+      if(!url||seen.has(url)||!/^https?:\/\//i.test(url)) continue;
+      seen.add(url);
+      let hText=cleanText([...h.getElementsByTagNameNS("*","t")].map(n=>n.textContent||"").join(""));
+      let title=(!/^https?:\/\//i.test(hText)&&hText)?hText:((pText&&!/^https?:\/\//i.test(pText))?pText:derivedTitle(url));
+      title=cleanText(title.replace(/\s*\((LONG FORM|V|E|Mapdy|Tổng hợp)\)\s*/ig," "));
+      result.push({section,year,title,url,source:detectSource(url),badges:metaBadges(pText)});
+    }
+    const urls=(pText.match(/https?:\/\/[^\s)]+/g)||[]).map(x=>x.replace(/[.,;]+$/,""));
+    for(const url of urls){
+      if(seen.has(url)) continue;
+      seen.add(url);
+      result.push({section,year,title:derivedTitle(url),url,source:detectSource(url),badges:metaBadges(pText)});
+    }
+  }
+  return result;
+}
+function setData(newData){
+  DATA=newData;
+  refreshDimensions();
+  state={section:"Tất cả",year:"Tất cả",q:""};
+  $("#q").value="";
+  makeFiltersReset();
+  render();
+}
+$("#importBtn").onclick=()=>$("#docxInput").click();
+$("#docxInput").addEventListener("change",async e=>{
+  const f=e.target.files&&e.target.files[0]; if(!f)return;
+  const st=$("#importStatus");
+  st.className="import-status"; st.textContent=`Đang đọc ${f.name}…`;
+  try{
+    const d=await parseDocx(f);
+    if(!d.length) throw new Error("Không tìm thấy hyperlink/URL hợp lệ trong file Word.");
+    setData(d);
+    st.className="import-status ok";
+    st.textContent=`Đã cập nhật ${d.length} liên kết từ ${f.name}. Bấm “Xuất HTML mới” để lưu phiên bản này.`;
+  }catch(err){
+    st.className="import-status err";
+    st.textContent=`Lỗi import: ${err.message}`;
+  }
+});
+$("#downloadBtn").onclick=()=>{
+  const clone=document.documentElement.cloneNode(true);
+  const scripts=[...clone.querySelectorAll("script")];
+  const mainScript=scripts.find(s=>s.textContent.includes("let DATA ="));
+  if(mainScript){
+    mainScript.textContent=mainScript.textContent.replace(/let DATA = \[[\s\S]*?\];\nlet SECTIONS/, `let DATA = ${JSON.stringify(DATA)};\nlet SECTIONS`);
+  }
+  const blob=new Blob(["<!doctype html>\n"+clone.outerHTML],{type:"text/html;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="VCS_Nguyen_Thai_Binh_Media_LinkTree_Updated.html";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+};
+
+$("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
+$("#clearBtn").onclick=()=>{$("#q").value="";state.q="";render()};
+makeFilters(); render();
+</script>
+</body>
+</html>
