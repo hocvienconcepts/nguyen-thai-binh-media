@@ -1,11 +1,11 @@
 # Nguyễn Thái Bình · Media Link Tree
 
-Trang tổng hợp **189 liên kết** báo chí, video, podcast và bài viết liên quan
+Trang tổng hợp **200 liên kết** báo chí, video, podcast và bài viết liên quan
 Nguyễn Thái Bình (Steven) / Học viện Concepts (VCS).
 
-- **Bài viết:** 151 · **Video:** 31 · **Podcast:** 4 · **Hồ sơ & tổng hợp:** 3
-- **Theo năm:** 2026 (86) · 2025 (73) · 2024 (23) · 2023 (4) · Khác (3)
-- **Nguồn nhiều nhất:** VietnamBiz, CafeBiz, Znews, Người Lao Động, Mekong ASEAN, Nhịp Cầu Đầu Tư, The Saigon Times
+- **Bài viết:** 163 · **Video:** 31 · **Podcast:** 3 · **Hồ sơ & tổng hợp:** 3
+- **Theo năm:** 2026 (100) · 2025 (70) · 2024 (23) · 2023 (4) · Khác (3)
+- **Nguồn nhiều nhất:** VietnamBiz, CafeBiz, Facebook, Znews, Người Lao Động, Thanh Niên, Nhịp Cầu Đầu Tư, Đại Biểu Nhân Dân
 
 Trang tĩnh 1 file, không backend, không database. Mở bằng trình duyệt là chạy.
 
@@ -21,7 +21,7 @@ nguyen-thai-binh-media/
 ```
 
 > `index.html` là tên bắt buộc để Cloudflare Pages nhận làm trang gốc.
-> File gốc `VCS_Nguyen_Thai_Binh_Media_LinkTree_AutoImport_Clean.html` đã được đổi tên sang đây.
+> File gốc `VCS_Nguyen_Thai_Binh_Media_LinkTree_Updated.html` đã được đổi tên sang đây.
 
 ---
 
@@ -136,11 +136,11 @@ Trang có sẵn 2 nút quản trị, chạy **hoàn toàn trong trình duyệt**
 
 ## 5. Ghi chú kỹ thuật
 
-- **Phụ thuộc ngoài duy nhất:** `jszip@3.10.1` từ cdn.jsdelivr.net — chỉ dùng cho
-  chức năng đọc file `.docx`. Nếu CDN chết, phần hiển thị link vẫn chạy bình thường.
+- **Không phụ thuộc CDN:** thư viện `jszip@3.10.1` (đọc file `.docx`) đã nhúng sẵn
+  trong `index.html`, nên trang chạy độc lập, kể cả khi offline.
 - **Dữ liệu link** nằm trong biến `DATA` (mảng JSON) ngay trong `index.html`.
   Có thể sửa tay nếu cần đổi 1–2 link lẻ.
-- Đã bổ sung so với file gốc: thẻ `canonical`, `robots`, Open Graph, Twitter Card,
+- Đã bổ sung so với file Updated gốc (file xuất ra không có các thẻ này): thẻ `canonical`, `robots`, Open Graph, Twitter Card,
   favicon và `schema.org/ProfilePage` — để khi share link lên Facebook/Zalo có
   tiêu đề + mô tả tử tế, và Google hiểu đây là trang hồ sơ cá nhân.
 - Mọi link ra ngoài đều có `target="_blank"` + `rel="noopener"`.
